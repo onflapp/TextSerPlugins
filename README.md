@@ -1,2 +1,28 @@
 # TextSerPlugins
-Plugins for TextSer App
+
+Useful plugins and samples for TextSer app.
+
+There are two types of plugins; one that does something with frontmost app
+(e.g extracts text) and the other that is used as an *action*.
+
+This repository includes plugins you can use "out of the box" or as a starting point for creating your own plugins.
+
+The plugins must be placed into app's "Application Scripts" folder
+**~/Library/Application\ Scripts/com.onflapp.TextSer**.
+
+## Install plugins using GIT
+```
+git clone https://github.com/onflapp/TextSerPlugins.git
+cp ./TextPlugins/* ~/Library/Application\ Scripts/com.onflapp.TextSer
+```
+
+## Download and install zipped plugins
+
+1. [download zip archive](https://github.com/onflapp/TextSerPlugins/archive/master.zip) and unzip it into a directory
+2. open scripts folder (Go to TextSer's **Help / Scripts Folder** menu)
+3. copy __contents__ of the zip archive to the scripts folder
+
+## Create new plugin
+
+A TextSer plugin is rather simple AppleScript file. The plugins are intended
+to be changed and modified by users. For more information see https://onflapp.github.io/TextSerPlugins/.
