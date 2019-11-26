@@ -26,3 +26,12 @@ cp -r ./TextSerPlugins/* ~/Library/Application\ Scripts/com.onflapp.TextSer
 
 A TextSer plugin is rather simple AppleScript file. The plugins are intended
 to be changed and modified by users. For more information see https://onflapp.github.io/TextSerPlugins/.
+
+## Troubleshooting
+
+Most of these plugins require _Accessibility_ permissions to function correctly. To enable these permissions do the following:
+
+- open **Security and Privacy** preferences
+- make sure TextSer is enabled in the **Accessibility** section
+
+If you still have experience problems, try to remove the app and add it again.
