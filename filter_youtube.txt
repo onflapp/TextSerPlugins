@@ -1,0 +1,20 @@
+#!/usr/bin/perl
+
+#<iframe width="560" height="315" src="https://www.youtube.com/embed/xxx_VIQCek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+$body = "";
+while(<STDIN>) {
+  chomp();
+  $body .= $_;
+}
+
+if ($body =~ /src="(.*?)"/) {
+  $SRC=$1;
+}
+
+if ($SRC ne "") {
+  print("<iframe width=\"560\" height=\"315\" src=\"$SRC\" frameborder=\"0\" allow=\"autoplay; encrypted-media; picture-in-picture\" allowfullscreen></iframe>\n");
+}
+else {
+  print("$body\n");
+}

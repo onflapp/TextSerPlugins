@@ -1,0 +1,29 @@
+#!/usr/bin/perl
+
+
+#<a data-flickr-embed="true" data-context="true" href="https://www.flickr.com/photos/60944299@N02/" title="title"><img src="https://live.staticflickr.com/img.jpg" width="100%" alt="title"></a><script async src="https://embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+$body = "";
+while(<STDIN>) {
+  chomp();
+  $body .= $_;
+}
+
+if ($body =~ /href="(.*?)"/) {
+  $HREF=$1;
+}
+
+if ($body =~ /img src="(.*?)"/) {
+  $SRC=$1;
+}
+
+if ($body =~ /title="(.*?)"/) {
+  $TITLE=$1;
+}
+
+if ($HREF ne "" && $TITLE ne "" && $SRC ne "") {
+  print("<a data-flickr-embed=\"true\" data-context=\"true\" href=\"$HREF\" title=\"$TITLE\"><img src=\"$SRC\" width=\"100%\" alt=\"$TILE\"></a><script async src=\"https://embedr.flickr.com/assets/client-code.js\" charset=\"utf-8\"></script>\n");
+}
+else {
+  print("$body\n");
+}
