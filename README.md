@@ -1,6 +1,10 @@
+# TextSer
+
+[TextSer](https://onflapp.github.io/blog/pages/TextSer.html?utm_source=git) is service tool for text writers. Write Markdown in Evernote, highlight source code fragments in Outlook, turn web links into QR code.
+
 # TextSerPlugins
 
-Useful plugins and samples for TextSer app.
+Useful plugins and samples for [TextSer](https://onflapp.github.io/blog/pages/TextSer.html?utm_source=git) app.
 
 There are two types of plugins; one that does something with frontmost app
 (e.g extracts text) and the other that is used as an *action*.
