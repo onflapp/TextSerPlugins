@@ -30,7 +30,7 @@ cp -r ./TextSerPlugins/* ~/Library/Application\ Scripts/com.onflapp.TextSer
 ## Create new plugin
 
 A TextSer plugin is rather simple AppleScript file. The plugins are intended
-to be changed and modified by users. For more information see https://onflapp.github.io/TextSerPlugins/.
+to be changed and modified by users. Description how to [create new plugin](https://onflapp.github.io/TextSerPlugins/).
 
 ## Troubleshooting
 

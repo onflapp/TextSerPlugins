@@ -1,7 +1,5 @@
 # Create new plugin
 
-[TextSer](https://onflapp.github.io/blog/pages/TextSer.html?utm_source=git) is app for formatting Markdown in any MacOS app.
-
 You can either use **Plugin Registration** dialog to create new plugin from a template. The dialog will create a temporary, read-only file that will have to be saved or copied into the **Scripts folder**. This is quite important, otherwise MacOS may refuse to run the script.
 
 Downloading and modifying one of the [sample plugins](https://github.com/onflapp/TextSerPlugins) is good way to start start as well.
