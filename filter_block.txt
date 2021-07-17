@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+
+$body = "";
+
+while(<STDIN>) {
+  chomp();
+  $body .= $_;
+}
+
+print("<div class=\"alert-box\">$body</div>");
