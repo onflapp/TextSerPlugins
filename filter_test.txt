@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "<pre>"
+echo "temporary directory: $1"
+echo "current document: $2"
+echo "content: "
+cat
+echo "</pre>"

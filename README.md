@@ -17,8 +17,8 @@ The plugins must be placed into app's "Application Scripts" folder
 ## Install plugins using GIT
 
 ```
-git clone https://github.com/onflapp/TextSerPlugins.git
-cp -r ./TextSerPlugins/* ~/Library/Application\ Scripts/com.onflapp.TextSer
+cd ~/Library/Application\ Scripts/com.onflapp.TextSer
+git clone https://github.com/onflapp/TextSerPlugins.git .
 ```
 
 ## Download and install zipped plugins

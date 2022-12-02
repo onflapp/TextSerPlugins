@@ -1,10 +1,5 @@
-#!/usr/bin/perl
+#!/bin/bash
 
-$body = "";
-
-while(<STDIN>) {
-  chomp();
-  $body .= $_;
-}
-
-print("<div class=\"alert-box\">$body</div>");
+echo "<div class=\"alert-box\">"
+cat
+echo "</div>"
